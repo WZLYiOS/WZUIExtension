@@ -1,0 +1,6 @@
+framework module Pods_WZUIExtension_Example {
+  umbrella header "Pods-WZUIExtension_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

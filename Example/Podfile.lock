@@ -1,0 +1,23 @@
+PODS:
+  - WZNamespaceWrappable (1.0.0)
+  - WZUIExtension (0.1.0):
+    - WZNamespaceWrappable (~> 1.0.0)
+
+DEPENDENCIES:
+  - WZUIExtension (from `../`)
+
+SPEC REPOS:
+  https://github.com/WZLYiOS/WZPodSpecs.git:
+    - WZNamespaceWrappable
+
+EXTERNAL SOURCES:
+  WZUIExtension:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  WZNamespaceWrappable: 880bfa32c164bb80381ae65a49350c81521765d4
+  WZUIExtension: 6a627746110ce28bd60e470d23be79832137b959
+
+PODFILE CHECKSUM: ddbbf61cafb7d81792e516a8ad3b6b5f36f7d37e
+
+COCOAPODS: 1.9.1

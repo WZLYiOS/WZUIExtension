@@ -1,0 +1,31 @@
+{
+  "name": "WZUIExtension",
+  "version": "0.1.0",
+  "summary": "A short description of WZUIExtension.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/WZLYiOS/WZUIExtension",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "LiuSky": "327847390@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/WZLYiOS/WZUIExtension.git",
+    "tag": "0.1.0"
+  },
+  "static_framework": true,
+  "swift_versions": "5.0",
+  "requires_arc": true,
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "WZUIExtension/Classes/**/*",
+  "dependencies": {
+    "WZNamespaceWrappable": [
+      "~> 1.0.0"
+    ]
+  },
+  "swift_version": "5.0"
+}
