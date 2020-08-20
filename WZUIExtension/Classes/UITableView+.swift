@@ -140,6 +140,26 @@ public extension WZTypeWrapperProtocol where WrappedType: UITableView {
     }
     
     
+    /// 取消选中的动画
+    /// - Parameter vc: 当前控制器
+    func deselectRowAnimation(_ vc: UIViewController) {
+        if let indexPath = wrappedValue.indexPathForSelectedRow {
+            if let transitionCoordinator = vc.transitionCoordinator {
+                transitionCoordinator.animate(alongsideTransition: { (context) in
+                    self.wrappedValue.deselectRow(at: indexPath, animated: true)
+                }, completion: nil)
+                
+                transitionCoordinator.notifyWhenInteractionChanges { (context) in
+                    if context.isCancelled {
+                        self.wrappedValue.selectRow(at: indexPath, animated: true, scrollPosition: .none)
+                    }
+                }
+            } else {
+                wrappedValue.deselectRow(at: indexPath, animated: true)
+            }
+        }
+    }
+    
     /// 可重复使用的类名称UITableViewCell出列
     ///
     /// - Parameter name: UITableViewCell类型
