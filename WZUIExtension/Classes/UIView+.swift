@@ -22,4 +22,16 @@ public extension WZTypeWrapperProtocol where WrappedType: UIView {
             wrappedValue.layer.setValue(true, forKey: "continuousCorners")
         }
     }
+    
+    
+    /// 圆角的设置
+    /// - Parameters:
+    ///   - corners: <#corners description#>
+    ///   - radius: <#radius description#>
+    func roundCorners(_ corners: UIRectCorner, radius: CGFloat) {
+         let path = UIBezierPath(roundedRect: wrappedValue.bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
+         let mask = CAShapeLayer()
+         mask.path = path.cgPath
+         wrappedValue.layer.mask = mask
+    }
 }
