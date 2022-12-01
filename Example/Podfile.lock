@@ -1,6 +1,6 @@
 PODS:
   - WZNamespaceWrappable (2.1.2)
-  - WZUIExtension (2.1.0):
+  - WZUIExtension (3.0.0):
     - WZNamespaceWrappable (~> 2.1.2)
 
 DEPENDENCIES:
@@ -16,7 +16,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   WZNamespaceWrappable: 65604717d18c3a2892d90270ff96487da1009d7c
-  WZUIExtension: 4aead429482c6ba39825e14b659d4a6aca19f3de
+  WZUIExtension: 64e9197898c17f95aeb6ef27130117ea2b69ab21
 
 PODFILE CHECKSUM: ddbbf61cafb7d81792e516a8ad3b6b5f36f7d37e
 
