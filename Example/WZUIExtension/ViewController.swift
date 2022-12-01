@@ -14,6 +14,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        debugPrint("添加fastlane")
     }
 
     override func didReceiveMemoryWarning() {
