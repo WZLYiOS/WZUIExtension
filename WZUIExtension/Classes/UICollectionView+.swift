@@ -11,7 +11,7 @@ import WZNamespaceWrappable
 
 
 // MARK: - UICollectionView
-public extension WZTypeWrapperProtocol where WrappedType: UICollectionView {
+public extension WZNamespaceWrappable where Base: UICollectionView {
     
     /// 最后一项在collectionView中的索引路径
     var indexPathForLastItem: IndexPath? {
@@ -20,7 +20,7 @@ public extension WZTypeWrapperProtocol where WrappedType: UICollectionView {
     
     /// 最后一项的Section是多少
     var lastSection: Int {
-        return wrappedValue.numberOfSections > 0 ? wrappedValue.numberOfSections - 1 : 0
+        return base.numberOfSections > 0 ? base.numberOfSections - 1 : 0
     }
     
     
@@ -30,8 +30,8 @@ public extension WZTypeWrapperProtocol where WrappedType: UICollectionView {
     func numberOfItems() -> Int {
         var section = 0
         var itemsCount = 0
-        while section < wrappedValue.numberOfSections {
-            itemsCount += wrappedValue.numberOfItems(inSection: section)
+        while section < base.numberOfSections {
+            itemsCount += base.numberOfItems(inSection: section)
             section += 1
         }
         return itemsCount
@@ -45,13 +45,13 @@ public extension WZTypeWrapperProtocol where WrappedType: UICollectionView {
         guard section >= 0 else {
             return nil
         }
-        guard section < wrappedValue.numberOfSections else {
+        guard section < base.numberOfSections else {
             return nil
         }
-        guard wrappedValue.numberOfItems(inSection: section) > 0 else {
+        guard base.numberOfItems(inSection: section) > 0 else {
             return IndexPath(item: 0, section: section)
         }
-        return IndexPath(item: wrappedValue.numberOfItems(inSection: section) - 1, section: section)
+        return IndexPath(item: base.numberOfItems(inSection: section) - 1, section: section)
     }
     
     
@@ -60,7 +60,7 @@ public extension WZTypeWrapperProtocol where WrappedType: UICollectionView {
     /// - Parameter completion: 在reloadData完成后运行的完成处理程序。
     func reloadData(_ completion: @escaping () -> Void) {
         UIView.animate(withDuration: 0, animations: {
-            self.wrappedValue.reloadData()
+            self.base.reloadData()
         }, completion: { _ in
             completion()
         })
@@ -75,7 +75,7 @@ public extension WZTypeWrapperProtocol where WrappedType: UICollectionView {
     /// - Returns: 具有相关类名的UICollectionViewCell对象。
     func dequeueReusableCell<T: UICollectionViewCell>(withClass name: T.Type, for indexPath: IndexPath) -> T {
         
-        guard let cell = wrappedValue.dequeueReusableCell(withReuseIdentifier: String(describing: name), for: indexPath) as? T else {
+        guard let cell = base.dequeueReusableCell(withReuseIdentifier: String(describing: name), for: indexPath) as? T else {
             fatalError("请注册Cell")
         }
         
@@ -92,7 +92,7 @@ public extension WZTypeWrapperProtocol where WrappedType: UICollectionView {
     /// - Returns: 具有相关类名的UICollectionReusableView对象。
     func dequeueReusableSupplementaryView<T: UICollectionReusableView>(ofKind kind: String, withClass name: T.Type, for indexPath: IndexPath) -> T {
         
-        guard let cell = wrappedValue.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: String(describing: name), for: indexPath) as? T else {
+        guard let cell = base.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: String(describing: name), for: indexPath) as? T else {
             fatalError("请注册Cell")
         }
         return cell
@@ -105,7 +105,7 @@ public extension WZTypeWrapperProtocol where WrappedType: UICollectionView {
     ///   - kind: 检索的补充视图。这个值由layout对象定义。
     ///   - name: UICollectionReusableView类型
     func register<T: UICollectionReusableView>(supplementaryViewOfKind kind: String, withClass name: T.Type) {
-        wrappedValue.register(T.self, forSupplementaryViewOfKind: kind, withReuseIdentifier: String(describing: name))
+        base.register(T.self, forSupplementaryViewOfKind: kind, withReuseIdentifier: String(describing: name))
     }
     
     
@@ -115,7 +115,7 @@ public extension WZTypeWrapperProtocol where WrappedType: UICollectionView {
     ///   - nib: 用于创建collectionView单元格的Nib文件。
     ///   - name: UICollectionViewCell类型
     func register<T: UICollectionViewCell>(nib: UINib?, forCellWithClass name: T.Type) {
-        wrappedValue.register(nib, forCellWithReuseIdentifier: String(describing: name))
+        base.register(nib, forCellWithReuseIdentifier: String(describing: name))
     }
     
     
@@ -123,7 +123,7 @@ public extension WZTypeWrapperProtocol where WrappedType: UICollectionView {
     ///
     /// - Parameter name: UICollectionViewCell 类型
     func register<T: UICollectionViewCell>(cellWithClass name: T.Type) {
-        wrappedValue.register(T.self, forCellWithReuseIdentifier: String(describing: name))
+        base.register(T.self, forCellWithReuseIdentifier: String(describing: name))
     }
     
     
@@ -134,7 +134,7 @@ public extension WZTypeWrapperProtocol where WrappedType: UICollectionView {
     ///   - kind: 检索的补充视图。这个值由layout对象定义。
     ///   - name: UICollectionReusableView类型
     func register<T: UICollectionReusableView>(nib: UINib?, forSupplementaryViewOfKind kind: String, withClass name: T.Type) {
-        wrappedValue.register(nib, forSupplementaryViewOfKind: kind, withReuseIdentifier: String(describing: name))
+        base.register(nib, forSupplementaryViewOfKind: kind, withReuseIdentifier: String(describing: name))
     }
     
     
@@ -151,6 +151,6 @@ public extension WZTypeWrapperProtocol where WrappedType: UICollectionView {
             bundle = Bundle(for: bundleName)
         }
         
-        wrappedValue.register(UINib(nibName: identifier, bundle: bundle), forCellWithReuseIdentifier: identifier)
+        base.register(UINib(nibName: identifier, bundle: bundle), forCellWithReuseIdentifier: identifier)
     }
 }

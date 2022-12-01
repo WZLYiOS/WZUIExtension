@@ -10,11 +10,11 @@ import UIKit
 import WZNamespaceWrappable
 
 // MARK: - 扩展
-public extension WZTypeWrapperProtocol where WrappedType: UIImage {
+public extension WZNamespaceWrappable where Base: UIImage {
     
     /// UIImage字节大小
     var bytesSize: Int {
-        return wrappedValue.jpegData(compressionQuality: 1)?.count ?? 0
+        return base.jpegData(compressionQuality: 1)?.count ?? 0
     }
     
     /// UIImage1024字节大小
@@ -24,19 +24,19 @@ public extension WZTypeWrapperProtocol where WrappedType: UIImage {
     
     /// UIImage与alwaysoriginal渲染模式。
     var original: UIImage {
-        return wrappedValue.withRenderingMode(.alwaysOriginal)
+        return base.withRenderingMode(.alwaysOriginal)
     }
     
     /// UIImage与alwaystemplate渲染模式。
     var template: UIImage {
-        return wrappedValue.withRenderingMode(.alwaysTemplate)
+        return base.withRenderingMode(.alwaysTemplate)
     }
     
     /// 九宫格拉伸
     var resizable: UIImage {
-        let widthFloat = floor(wrappedValue.size.width/2)
-        let heightFloat = floor(wrappedValue.size.height/2)
-        return wrappedValue.resizableImage(withCapInsets: UIEdgeInsets(top: heightFloat, left: widthFloat, bottom: heightFloat, right: widthFloat))
+        let widthFloat = floor(base.size.width/2)
+        let heightFloat = floor(base.size.height/2)
+        return base.resizableImage(withCapInsets: UIEdgeInsets(top: heightFloat, left: widthFloat, bottom: heightFloat, right: widthFloat))
 }
 }
 

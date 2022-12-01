@@ -9,17 +9,17 @@ import UIKit
 import WZNamespaceWrappable
 
 /// MARK: - UIView
-public extension WZTypeWrapperProtocol where WrappedType: UIView {
+public extension WZNamespaceWrappable where Base: UIView {
 
     /// 设置平滑圆角
     /// - Parameter radius: radius
     func cornerRadius(_ radius: CGFloat) {
-        wrappedValue.layer.cornerRadius = radius
-        wrappedValue.clipsToBounds = true
+        base.layer.cornerRadius = radius
+        base.clipsToBounds = true
         if #available(iOS 13, *) {
-            wrappedValue.layer.cornerCurve = .continuous
+            base.layer.cornerCurve = .continuous
         } else {
-            wrappedValue.layer.setValue(true, forKey: "continuousCorners")
+            base.layer.setValue(true, forKey: "continuousCorners")
         }
     }
     
@@ -29,9 +29,9 @@ public extension WZTypeWrapperProtocol where WrappedType: UIView {
     ///   - corners: <#corners description#>
     ///   - radius: <#radius description#>
     func roundCorners(_ corners: UIRectCorner, radius: CGFloat) {
-         let path = UIBezierPath(roundedRect: wrappedValue.bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
+         let path = UIBezierPath(roundedRect: base.bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
          let mask = CAShapeLayer()
          mask.path = path.cgPath
-         wrappedValue.layer.mask = mask
+         base.layer.mask = mask
     }
 }

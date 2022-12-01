@@ -11,7 +11,7 @@ import WZNamespaceWrappable
 
 
 /// MARK - UIAlertController +
-public extension WZNamespaceWrapper where WrappedType: UIAlertController {
+public extension WZNamespaceWrappable where Base: UIAlertController {
     
     
     /// 提示框(取消就是传-1)
@@ -64,7 +64,7 @@ public extension WZNamespaceWrapper where WrappedType: UIAlertController {
                                                         tintColor: UIColor? = nil,
                                                         handler: ((_ action: Action, _ index: Int) -> Void)? = nil) {
         
-        let alertView = self.wrappedValue
+        let alertView = self.base
         
         if let temAttributedMessage = attributedMessage {
             /// 设置自定义Message的NSAttributedString (attributedTitle)
@@ -101,7 +101,7 @@ public extension WZNamespaceWrapper where WrappedType: UIAlertController {
             alertView.view.tintColor = color
         }
         DispatchQueue.main.async {
-            vc.present(self.wrappedValue, animated: true, completion: nil)
+            vc.present(self.base, animated: true, completion: nil)
         }
     }
 }

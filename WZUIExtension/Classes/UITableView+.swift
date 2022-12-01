@@ -10,7 +10,7 @@ import UIKit
 import WZNamespaceWrappable
 
 /// MARK: - UITableView
-public extension WZTypeWrapperProtocol where WrappedType: UITableView {
+public extension WZNamespaceWrappable where Base: UITableView {
     
     
     /// 索引路径tableview最后一排
@@ -20,7 +20,7 @@ public extension WZTypeWrapperProtocol where WrappedType: UITableView {
     
     /// 最后Section索引
     var lastSection: Int {
-        return wrappedValue.numberOfSections > 0 ? wrappedValue.numberOfSections - 1 : 0
+        return base.numberOfSections > 0 ? base.numberOfSections - 1 : 0
     }
     
     /// TableView的行数
@@ -29,8 +29,8 @@ public extension WZTypeWrapperProtocol where WrappedType: UITableView {
     func numberOfRows() -> Int {
         var section = 0
         var rowCount = 0
-        while section < wrappedValue.numberOfSections {
-            rowCount += wrappedValue.numberOfRows(inSection: section)
+        while section < base.numberOfSections {
+            rowCount += base.numberOfRows(inSection: section)
             section += 1
         }
         return rowCount
@@ -42,10 +42,10 @@ public extension WZTypeWrapperProtocol where WrappedType: UITableView {
     /// - Returns: <#return value description#>
     func indexPathForLastRow(inSection section: Int) -> IndexPath? {
         guard section >= 0 else { return nil }
-        guard wrappedValue.numberOfRows(inSection: section) > 0  else {
+        guard base.numberOfRows(inSection: section) > 0  else {
             return IndexPath(row: 0, section: section)
         }
-        return IndexPath(row: wrappedValue.numberOfRows(inSection: section) - 1, section: section)
+        return IndexPath(row: base.numberOfRows(inSection: section) - 1, section: section)
     }
     
     
@@ -106,7 +106,7 @@ public extension WZTypeWrapperProtocol where WrappedType: UITableView {
     /// - Parameter completion: <#completion description#>
     func reloadData(_ completion: @escaping () -> Void) {
         UIView.animate(withDuration: 0, animations: {
-            self.wrappedValue.reloadData()
+            self.base.reloadData()
         }, completion: { _ in
             completion()
         })
@@ -114,12 +114,12 @@ public extension WZTypeWrapperProtocol where WrappedType: UITableView {
     
     /// 移除TableFooterView
     func removeTableFooterView() {
-        wrappedValue.tableFooterView = nil
+        base.tableFooterView = nil
     }
     
     /// 移除TableHeaderView.
     func removeTableHeaderView() {
-        wrappedValue.tableHeaderView = nil
+        base.tableHeaderView = nil
     }
     
     
@@ -127,8 +127,8 @@ public extension WZTypeWrapperProtocol where WrappedType: UITableView {
     ///
     /// - Parameter animated: 是否动画
     func scrollToBottom(animated: Bool = true) {
-        let bottomOffset = CGPoint(x: 0, y: wrappedValue.contentSize.height - wrappedValue.bounds.size.height)
-        wrappedValue.setContentOffset(bottomOffset, animated: animated)
+        let bottomOffset = CGPoint(x: 0, y: base.contentSize.height - base.bounds.size.height)
+        base.setContentOffset(bottomOffset, animated: animated)
     }
     
     
@@ -136,26 +136,26 @@ public extension WZTypeWrapperProtocol where WrappedType: UITableView {
     ///
     /// - Parameter animated: 是否动画
     func scrollToTop(animated: Bool = true) {
-        wrappedValue.setContentOffset(CGPoint.zero, animated: animated)
+        base.setContentOffset(CGPoint.zero, animated: animated)
     }
     
     
     /// 取消选中的动画
     /// - Parameter vc: 当前控制器
     func deselectRowAnimation(_ vc: UIViewController) {
-        if let indexPath = wrappedValue.indexPathForSelectedRow {
+        if let indexPath = base.indexPathForSelectedRow {
             if let transitionCoordinator = vc.transitionCoordinator {
                 transitionCoordinator.animate(alongsideTransition: { (context) in
-                    self.wrappedValue.deselectRow(at: indexPath, animated: true)
+                    self.base.deselectRow(at: indexPath, animated: true)
                 }, completion: nil)
                 
                 transitionCoordinator.notifyWhenInteractionChanges { (context) in
                     if context.isCancelled {
-                        self.wrappedValue.selectRow(at: indexPath, animated: true, scrollPosition: .none)
+                        self.base.selectRow(at: indexPath, animated: true, scrollPosition: .none)
                     }
                 }
             } else {
-                wrappedValue.deselectRow(at: indexPath, animated: true)
+                base.deselectRow(at: indexPath, animated: true)
             }
         }
     }
@@ -166,7 +166,7 @@ public extension WZTypeWrapperProtocol where WrappedType: UITableView {
     /// - Returns: 关联类UITableViewCell对象名称（可选值）
     func dequeueReusableCell<T: UITableViewCell>(withClass name: T.Type) -> T {
         
-        guard let cell = wrappedValue.dequeueReusableCell(withIdentifier: String(describing: name)) as? T  else {
+        guard let cell = base.dequeueReusableCell(withIdentifier: String(describing: name)) as? T  else {
             fatalError("请注册Cell")
         }
         return cell
@@ -181,7 +181,7 @@ public extension WZTypeWrapperProtocol where WrappedType: UITableView {
     /// - Returns: 相关的类名称UITableViewCell对象
     func dequeueReusableCell<T: UITableViewCell>(withClass name: T.Type, for indexPath: IndexPath) -> T {
         
-        guard let cell = wrappedValue.dequeueReusableCell(withIdentifier: String(describing: name), for: indexPath) as? T  else {
+        guard let cell = base.dequeueReusableCell(withIdentifier: String(describing: name), for: indexPath) as? T  else {
             fatalError("请注册Cell")
         }
         return cell
@@ -194,7 +194,7 @@ public extension WZTypeWrapperProtocol where WrappedType: UITableView {
     /// - Returns: 相关的类名称UITableViewHeaderFooterView对象(optional value)
     func dequeueReusableHeaderFooterView<T: UITableViewHeaderFooterView>(withClass name: T.Type) -> T {
         
-        guard let cell = wrappedValue.dequeueReusableHeaderFooterView(withIdentifier: String(describing: name)) as? T  else {
+        guard let cell = base.dequeueReusableHeaderFooterView(withIdentifier: String(describing: name)) as? T  else {
             fatalError("请注册Cell")
         }
         return cell
@@ -207,7 +207,7 @@ public extension WZTypeWrapperProtocol where WrappedType: UITableView {
     ///   - nib: nib
     ///   - name: UITableViewHeaderFooterView 类型
     func register<T: UITableViewHeaderFooterView>(nib: UINib?, withHeaderFooterViewClass name: T.Type) {
-        wrappedValue.register(nib, forHeaderFooterViewReuseIdentifier: String(describing: name))
+        base.register(nib, forHeaderFooterViewReuseIdentifier: String(describing: name))
     }
     
     
@@ -215,7 +215,7 @@ public extension WZTypeWrapperProtocol where WrappedType: UITableView {
     ///
     /// - Parameter name: UITableViewHeaderFooterView 类型
     func register<T: UITableViewHeaderFooterView>(headerFooterViewClassWith name: T.Type) {
-        wrappedValue.register(T.self, forHeaderFooterViewReuseIdentifier: String(describing: name))
+        base.register(T.self, forHeaderFooterViewReuseIdentifier: String(describing: name))
     }
     
     
@@ -223,7 +223,7 @@ public extension WZTypeWrapperProtocol where WrappedType: UITableView {
     ///
     /// - Parameter name: UITableViewCell 类型
     func register<T: UITableViewCell>(cellWithClass name: T.Type) {
-        wrappedValue.register(T.self, forCellReuseIdentifier: String(describing: name))
+        base.register(T.self, forCellReuseIdentifier: String(describing: name))
     }
     
     
@@ -233,7 +233,7 @@ public extension WZTypeWrapperProtocol where WrappedType: UITableView {
     ///   - nib: nil
     ///   - name: UITableViewCell 类型
     func register<T: UITableViewCell>(nib: UINib?, withCellClass name: T.Type) {
-        wrappedValue.register(nib, forCellReuseIdentifier: String(describing: name))
+        base.register(nib, forCellReuseIdentifier: String(describing: name))
     }
     
     
@@ -250,7 +250,7 @@ public extension WZTypeWrapperProtocol where WrappedType: UITableView {
             bundle = Bundle(for: bundleName)
         }
         
-        wrappedValue.register(UINib(nibName: identifier, bundle: bundle), forCellReuseIdentifier: identifier)
+        base.register(UINib(nibName: identifier, bundle: bundle), forCellReuseIdentifier: identifier)
     }
 }
 

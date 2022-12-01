@@ -9,7 +9,7 @@ import UIKit
 import WZNamespaceWrappable
 
 /// MARK - UILabel +
-public extension WZNamespaceWrapper where WrappedType: UILabel {
+public extension WZNamespaceWrappable where Base: UILabel {
 
     /// 修复LineHeight
     static func fixLineHeightAttributed(_ lineHeight: CGFloat, font: UIFont) -> [NSAttributedString.Key: Any] {
