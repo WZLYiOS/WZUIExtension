@@ -9,6 +9,13 @@
 import UIKit
 import WZNamespaceWrappable
 
+private struct WZButtonCustomEdgeInset {
+    static var top: String = "topkey"
+    static var left: String = "leftkey"
+    static var bottom: String = "botkey"
+    static var right: String = "rightkey"
+}
+
 /// MARK - 按钮
 public extension WZNamespaceWrappable where Base: UIButton {
     
@@ -18,6 +25,8 @@ public extension WZNamespaceWrappable where Base: UIButton {
     case left         //图片在左，文字在右，水平居中对齐
     case right        //图片在右，文字在左，水平居中对齐
     }
+    
+    
     
     /// 按钮禁用状态图像
     var imageForDisabled: UIImage? {
@@ -294,5 +303,56 @@ public extension WZNamespaceWrappable where Base: UIButton {
         base.titleEdgeInsets = labelEdgeInsets
         base.imageEdgeInsets = imageEdgeInsets
     }
+    
+    /// 设置边界
+    func setEnlargeEdge(_ edge: CGFloat) {
+        setEnlargeEdge(edge, edge, edge, edge)
+    }
+    
+    /// 设置按钮边界
+    func setEnlargeEdge(_ top: CGFloat,_ bot: CGFloat,_ left: CGFloat,_ right: CGFloat) {
+        
+        objc_setAssociatedObject(base, &WZButtonCustomEdgeInset.top, top, .OBJC_ASSOCIATION_COPY_NONATOMIC)
+        objc_setAssociatedObject(base, &WZButtonCustomEdgeInset.left, left, .OBJC_ASSOCIATION_COPY_NONATOMIC)
+        objc_setAssociatedObject(base, &WZButtonCustomEdgeInset.right, right, .OBJC_ASSOCIATION_COPY_NONATOMIC)
+        objc_setAssociatedObject(base, &WZButtonCustomEdgeInset.bottom, bot, .OBJC_ASSOCIATION_COPY_NONATOMIC)
+    }
 }
 
+/// MARK - 按钮点击范围
+extension UIButton {
+    
+    /// 获取边界
+    private func returnRect() -> CGRect{
+        let top = objc_getAssociatedObject(self, &WZButtonCustomEdgeInset.top) as? CGFloat
+        let left = objc_getAssociatedObject(self, &WZButtonCustomEdgeInset.left) as? CGFloat
+        let bot = objc_getAssociatedObject(self, &WZButtonCustomEdgeInset.bottom) as? CGFloat
+        let right = objc_getAssociatedObject(self, &WZButtonCustomEdgeInset.right) as? CGFloat
+        
+        guard let top = objc_getAssociatedObject(self, &WZButtonCustomEdgeInset.top) as? CGFloat,
+                let left = objc_getAssociatedObject(self, &WZButtonCustomEdgeInset.left) as? CGFloat,
+                let bot = objc_getAssociatedObject(self, &WZButtonCustomEdgeInset.bottom) as? CGFloat,
+              let right = objc_getAssociatedObject(self, &WZButtonCustomEdgeInset.right) as? CGFloat else {
+            return self.bounds
+        }
+        return CGRect(x: self.bounds.origin.x-left,
+                      y: self.bounds.origin.y-top,
+                      width: self.bounds.size.width+left+right,
+                      height: self.bounds.size.height+top+bot)
+    }
+    
+    
+    /// 重写系统事件
+    open override func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
+        
+        if (self.isHidden || self.alpha == 0.0) {
+            return super.hitTest(point, with: event)
+        }
+        
+        let rect = returnRect()
+        if (CGRectEqualToRect(rect, self.bounds)) {
+            return super.hitTest(point, with: event)
+        }
+        return CGRectContainsPoint(rect, point) ? self : nil;
+    }
+}
