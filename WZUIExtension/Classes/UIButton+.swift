@@ -404,7 +404,7 @@ open class WZGradientButton: UIButton {
     }
     
     // 添加渐变层
-    func builder(layers: [WZButtonCAGradientLayer]){
+    public func builder(layers: [WZButtonCAGradientLayer]){
         layers.forEach {
             layer.insertSublayer($0, at: 0)
         }
