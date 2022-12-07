@@ -37,7 +37,40 @@ public extension WZNamespaceWrappable where Base: UIImage {
         let widthFloat = floor(base.size.width/2)
         let heightFloat = floor(base.size.height/2)
         return base.resizableImage(withCapInsets: UIEdgeInsets(top: heightFloat, left: widthFloat, bottom: heightFloat, right: widthFloat))
-}
+    }
+    
+    /// 图片拉伸
+    func resizable(edgeInsets: UIEdgeInsets, resizingMode: UIImage.ResizingMode = .stretch) -> UIImage {
+        return base.resizableImage(withCapInsets: edgeInsets, resizingMode: resizingMode)
+    }
+    
+    /// 图片缩小
+    /// - Parameter reSize: reSize description
+    /// - Returns: description
+    func  reSizeImage(reSize: CGSize)-> UIImage  {
+        UIGraphicsBeginImageContextWithOptions (reSize, false , UIScreen.main.scale)
+        base.draw(in: CGRect(x: 0, y: 0, width: reSize.width, height: reSize.height))
+        let reSizeImage: UIImage = UIGraphicsGetImageFromCurrentImageContext() ?? base
+        UIGraphicsEndImageContext()
+        return reSizeImage
+    }
+    
+    /// 高斯模糊
+    func blurImage(radius: CGFloat = 30) -> UIImage {
+        let context = CIContext (options:  nil )
+        let  inputImage = CIImage (image: base)
+        //使用高斯模糊滤镜
+        let  filter  =  CIFilter (name:  "CIGaussianBlur" )!
+        filter.setValue(inputImage, forKey:kCIInputImageKey)
+        //设置模糊半径值（越大越模糊）
+        filter.setValue(radius, forKey: kCIInputRadiusKey)
+        let  outputCIImage =  filter.outputImage!
+        let  rect =  CGRect (origin:  CGPoint .zero, size: base.size)
+        let  cgImage = context.createCGImage(outputCIImage, from: rect)
+        //显示生成的模糊图片
+        let newImage =  UIImage (cgImage: cgImage!)
+        return newImage
+    }
 }
 
 
