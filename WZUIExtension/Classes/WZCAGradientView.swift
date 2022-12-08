@@ -38,7 +38,7 @@ open class WZCAGradientView: UIView {
     }
         
     /// 添加不同圆角
-    func addCorner(topLeft: CGFloat = 0, topRight: CGFloat = 0, bottomLeft: CGFloat = 0, bottomRight: CGFloat = 0) {
+    public func addCorner(topLeft: CGFloat = 0, topRight: CGFloat = 0, bottomLeft: CGFloat = 0, bottomRight: CGFloat = 0) {
         self.topLeft = topLeft
         self.topRight = topRight
         self.bottomLeft = bottomLeft
