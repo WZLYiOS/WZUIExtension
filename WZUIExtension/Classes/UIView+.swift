@@ -8,6 +8,14 @@
 import UIKit
 import WZNamespaceWrappable
 
+/// 圆角
+public enum WZCornerRadii {
+case topLeft(CGFloat)
+case topRight(CGFloat)
+case bottomLeft(CGFloat)
+case bottomRight(CGFloat)
+}
+
 /// MARK: - UIView
 public extension WZNamespaceWrappable where Base: UIView {
 
@@ -34,47 +42,48 @@ public extension WZNamespaceWrappable where Base: UIView {
          mask.path = path.cgPath
          base.layer.mask = mask
     }
+    
+    
+    /// 切圆角函数绘制线条
+    static func createPathWithRoundedRect(bounds:CGRect, topLeft: CGFloat = 0, topRight: CGFloat = 0, bottomLeft: CGFloat = 0, bottomRight: CGFloat = 0) -> CGPath {
+        
+        //虽然顺时针参数是YES，在iOS中的UIView中，这里实际是逆时针
+        let path = CGMutablePath();
+        let minX = bounds.minX
+        let minY = bounds.minY
+        let maxX = bounds.maxX
+        let maxY = bounds.maxY
+        
+        let topLeftCenterX = minX + topLeft
+        let topLeftCenterY = minY + topLeft
+        path.addArc(center: CGPoint(x: topLeftCenterX, y: topLeftCenterY), radius: topLeft, startAngle: CGFloat.pi, endAngle: CGFloat.pi * 3 / 2, clockwise: false)
+        
+        let topRightCenterX = maxX - topRight
+        let topRightCenterY = minY + topRight
+        path.addArc(center: CGPoint(x: topRightCenterX, y: topRightCenterY), radius: topRight, startAngle: CGFloat.pi * 3 / 2, endAngle: 0, clockwise: false)
+        
+        let bottomRightCenterX = maxX - bottomLeft
+        let bottomRightCenterY = maxY - bottomLeft
+        //底右
+        path.addArc(center: CGPoint(x: bottomRightCenterX, y: bottomRightCenterY), radius: bottomLeft, startAngle: 0, endAngle: CGFloat.pi / 2, clockwise: false)
+        
+        let bottomLeftCenterX = minX + bottomRight
+        let bottomLeftCenterY = maxY - bottomRight
+        //底左
+        path.addArc(center: CGPoint(x: bottomLeftCenterX, y: bottomLeftCenterY), radius: bottomRight, startAngle: CGFloat.pi / 2, endAngle: CGFloat.pi, clockwise: false)
+    
+        path.closeSubpath()
+        return path
+    }
+    
+    /// 添加4个不同大小的圆角
+    func addCorner(topLeft: CGFloat = 0, topRight: CGFloat = 0, bottomLeft: CGFloat = 0, bottomRight: CGFloat = 0) {
+       let frame = base.bounds
+       let path = UIView.wz.createPathWithRoundedRect(bounds: frame, topLeft: topLeft, topRight: topRight, bottomLeft: bottomLeft, bottomRight: bottomLeft)
+       let shapLayer = CAShapeLayer()
+       shapLayer.frame = frame
+       shapLayer.path = path
+        base.layer.mask = shapLayer
+    }
 }
 
-// MARK - 渐变视图
-open class WZGradientView: UIView {
-
-    /*
-     $0.startPoint = CGPoint.init(x: 0, y: 0)
-     $0.endPoint = CGPoint.init(x: 1, y: 1)
-     $0.colors = [UIColor.wz.hexadecimal(rgb: 0xFF4172).cgColor,UIColor.wz.hexadecimal(rgb: 0xFD3C49).cgColor]
-     $0.locations = [0.0,0.5,1.0]
-     $0.cornerRadius = 0
-     $0.masksToBounds = true
-     */
-    open class WZCAGradientLayer: CAGradientLayer {
-        
-        public init(startPoint: CGPoint, endPoint: CGPoint, colors: [Any]?, locations: [NSNumber]?) {
-            super.init()
-            self.startPoint = startPoint
-            self.endPoint = endPoint
-            self.colors = colors
-            self.locations = locations
-        }
-        
-        required public init?(coder: NSCoder) {
-            fatalError("init(coder:) has not been implemented")
-        }
-    }
-    
-    public init(layer: WZCAGradientLayer) {
-        super.init(frame: CGRect.zero)
-        layer.insertSublayer(layer, at: 0)
-    }
-    
-    required public init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    open override func layoutSubviews() {
-        super.layoutSubviews()
-        layer.sublayers?.forEach{
-            ($0 as? WZCAGradientLayer)?.frame = bounds
-        }
-    }
-}
