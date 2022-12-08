@@ -7,47 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		114BE40A8E374A43BEF7DBFF96DBBC10 /* WZGradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D121A56E551A33B4E80E655424D6E9 /* WZGradientButton.swift */; };
+		143E49FF0817E1B3765F57C54F8FA20D /* UIButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F286548FDF8745B8E30236DCDB44CEE /* UIButton+.swift */; };
 		155D768F7CFF4C7EC1A77E57552F2932 /* WZNamespaceWrappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A887EEDEFEAD4F61A302ABEF015F308A /* WZNamespaceWrappable.swift */; };
-		23F600B34604E0E60438B1FE8E5E0D5F /* UICollectionView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DDB74033D4AB38EC0694EFDD0B474E /* UICollectionView+.swift */; };
-		2882C85A2941939C0000B78F /* WZCAGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2882C8592941939C0000B78F /* WZCAGradientView.swift */; };
-		2882C85C294193F70000B78F /* WZGradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2882C85B294193F70000B78F /* WZGradientButton.swift */; };
-		3213130791AB5485B1EEC6DF105A9504 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D5AAC9264EF0BE9823A48888BA1EA6 /* UIView+.swift */; };
-		3D1AF352152472FB07D6756270ED307F /* WZUIExtension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8946CF5B2678B7B0A87A509BB47A0327 /* WZUIExtension-dummy.m */; };
+		18B498D660FCC3E941141F9451B5EABB /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB702FC33B1A7C2C2254D7B204B3CAE /* UIView+.swift */; };
+		28EA82F579B90A810B263CC2A1D67817 /* UILabel+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37299849CB73E0DD04AD3C791B03D1F1 /* UILabel+.swift */; };
+		2CB3AF999C77AFD59C20600AE9B827E0 /* UIDevice+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5344036362F79484EED52FE90FEE0F8 /* UIDevice+.swift */; };
+		34DD7936797D1635D1E3CE917C77F8D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		3B56837922B8ADD4A708D816A04052B0 /* WZUIExtension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E735521EA3FD8D333B61288A97ACE67 /* WZUIExtension-dummy.m */; };
+		488D681F02BC19A2D15C45310F87634A /* WZUIExtension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AE6E7AE7850A2DA7F113DF4BF2A4C525 /* WZUIExtension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4BAB04F5044566FA365D7A23A56EB5AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		4C8A521BF94116141DBCE9D8BEC15851 /* WZNamespaceWrappable-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 946EAB43FDEF819C152D0D889174C74F /* WZNamespaceWrappable-dummy.m */; };
+		4F21D4D58F3B82EB409E2052DCE1C958 /* UIAlertAction+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0506AE7830601CA04E7593191C84D975 /* UIAlertAction+Image.swift */; };
 		54B280F5F85319A3A6298F4C01720DDC /* WZNamespaceWrappable-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 98EBC9ABAD94232B331E6B5CF77A7AAA /* WZNamespaceWrappable-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5C8A738F3E31C680183407A5A392CD8B /* UIControl+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61E7D1DDD7BC38820FFD3D2D9C693A1 /* UIControl+.swift */; };
-		5DFEE4B8F8BD18B14E84ADFBBB68F1BB /* UIAlertAction+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC83F67F693A34CA0962F5E1D2617A4 /* UIAlertAction+Image.swift */; };
-		6DF65E547E0FBFE6875273640372D5B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		765813C6CCDF560A4006ACD40847E035 /* WZUIExtension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 56BECD01BC6F35158AC47B1810794B71 /* WZUIExtension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		787334B657F43441D4660B01AB31D68D /* UITableView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE050DACD1A5CD103E513CBAAE7C3B8D /* UITableView+.swift */; };
-		8015DC343E5006510E68E22F22AA1364 /* UIAlertController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A68CB18EA201A04E6C116897892DE5 /* UIAlertController+.swift */; };
-		830CFFF72DAA36C5D892ED7F0D15E97A /* UIButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0265EACE621D180A7225845FAF715454 /* UIButton+.swift */; };
+		5CD1C872D9947BCABFCFA09E51AF56A6 /* WZCAGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CB383D6D34299AC44AC5B9B4D2DAB7 /* WZCAGradientView.swift */; };
+		85075DB66CF39B981ED1C8EE3C7F5DC3 /* UIAlertController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B92CA74545AB6418F7E58C15B87384 /* UIAlertController+.swift */; };
 		85D7301C8944F1CF3190BFE69745A389 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		86DECA010E8F08342ADFA48DDC7DEC1F /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A9553EB5FE0ADA7D645A7CBD3AC2B5 /* UIColor+.swift */; };
-		9241825EF936FBB805021F565AE2ED1C /* UIDevice+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8647234BCBE1FDE016477535F19A7C34 /* UIDevice+.swift */; };
-		97CFFCEB7AD88524684CE35DB52766CC /* UILabel+.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCBCEAC2C0AA181609F978B2DA5F33E /* UILabel+.swift */; };
+		893A7564444A17F63881CC276964F83C /* UIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2783C31BE375C428E8DE684AA082CB /* UIImage+.swift */; };
 		A500AF5C7E4AE3FDFB302504C896D7D9 /* Pods-WZUIExtension_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B04D66A9FE53F5D294E5E1A0A5EADE2B /* Pods-WZUIExtension_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B82237FAECA80D2CEF3F908FD6A5AC76 /* UIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9D2798B9DB196792BFF1C079725969 /* UIImage+.swift */; };
+		A800A7F234DEA411C6C420132FB4327A /* UIControl+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8388735A2B55EC4126FF88D905A3AFE5 /* UIControl+.swift */; };
+		B784DE86C6E8971A259EE074D2D39128 /* UICollectionView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15483903AD4CB465BBAD7D35454DC5D /* UICollectionView+.swift */; };
+		C549F3DEEBFAD3C483A6B0592125EEA8 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E41D4C64CEE9F310728F7E207ACE8F4 /* UIColor+.swift */; };
 		D88B243026266D61EC2BE1F880492DB5 /* Pods-WZUIExtension_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B5F344F7E27734886F2A883BE10F86E /* Pods-WZUIExtension_Example-dummy.m */; };
+		F01638BC0996B4408D88B81CCF8A28D0 /* UITableView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F443F442F9D902011D1C0AA777EDE1B /* UITableView+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		6CD2889D3C7A7608390D957E528B0793 /* PBXContainerItemProxy */ = {
+		5AC047C0E0BA38036F2C0BCFE70E8501 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 1A655A57748C7717D20FB5E031C49A29;
 			remoteInfo = WZNamespaceWrappable;
 		};
-		ECA805970FE3791AD1B8DFB475AADCCD /* PBXContainerItemProxy */ = {
+		B1A802D02A040CE01D5502553EC8BB62 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 1A655A57748C7717D20FB5E031C49A29;
 			remoteInfo = WZNamespaceWrappable;
 		};
-		F3BAFD78F0E612C16E2654940B578F79 /* PBXContainerItemProxy */ = {
+		CE5995924C35034AD5A2EF8F380B9D19 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -57,61 +57,53 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01DDB74033D4AB38EC0694EFDD0B474E /* UICollectionView+.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UICollectionView+.swift"; path = "WZUIExtension/Classes/UICollectionView+.swift"; sourceTree = "<group>"; };
-		0265EACE621D180A7225845FAF715454 /* UIButton+.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton+.swift"; path = "WZUIExtension/Classes/UIButton+.swift"; sourceTree = "<group>"; };
+		0506AE7830601CA04E7593191C84D975 /* UIAlertAction+Image.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIAlertAction+Image.swift"; path = "WZUIExtension/Classes/UIAlertAction+Image.swift"; sourceTree = "<group>"; };
+		0F286548FDF8745B8E30236DCDB44CEE /* UIButton+.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton+.swift"; path = "WZUIExtension/Classes/UIButton+.swift"; sourceTree = "<group>"; };
 		11FE8D5528D258F5DF438FD1CCED8F7A /* WZUIExtension */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WZUIExtension; path = WZUIExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1AA9645BB8B0DA208C4F859B0EA2FDD6 /* WZUIExtension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WZUIExtension.modulemap; sourceTree = "<group>"; };
+		12D121A56E551A33B4E80E655424D6E9 /* WZGradientButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WZGradientButton.swift; path = WZUIExtension/Classes/WZGradientButton.swift; sourceTree = "<group>"; };
+		1AA29AC687FD00D67C99D6E86A21966F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		1B5F344F7E27734886F2A883BE10F86E /* Pods-WZUIExtension_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WZUIExtension_Example-dummy.m"; sourceTree = "<group>"; };
 		1B9D8B50DD1533B5B6CF0ED9F676E532 /* Pods-WZUIExtension_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WZUIExtension_Example-Info.plist"; sourceTree = "<group>"; };
-		2882C8592941939C0000B78F /* WZCAGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WZCAGradientView.swift; sourceTree = "<group>"; };
-		2882C85B294193F70000B78F /* WZGradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WZGradientButton.swift; sourceTree = "<group>"; };
-		30716A1D23DB8505BAD328C5804FD113 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		405DD499F58084A95AAE59B6436B1795 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1E735521EA3FD8D333B61288A97ACE67 /* WZUIExtension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WZUIExtension-dummy.m"; sourceTree = "<group>"; };
+		26BECBF537E5A57BD787D3F5A36483F1 /* WZUIExtension-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WZUIExtension-Info.plist"; sourceTree = "<group>"; };
+		2BB702FC33B1A7C2C2254D7B204B3CAE /* UIView+.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+.swift"; path = "WZUIExtension/Classes/UIView+.swift"; sourceTree = "<group>"; };
+		37299849CB73E0DD04AD3C791B03D1F1 /* UILabel+.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILabel+.swift"; path = "WZUIExtension/Classes/UILabel+.swift"; sourceTree = "<group>"; };
 		42EC01BE1A0F44B8EFF1A7EAAA288A4D /* Pods-WZUIExtension_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WZUIExtension_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		56BECD01BC6F35158AC47B1810794B71 /* WZUIExtension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WZUIExtension-umbrella.h"; sourceTree = "<group>"; };
-		6A9D2798B9DB196792BFF1C079725969 /* UIImage+.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+.swift"; path = "WZUIExtension/Classes/UIImage+.swift"; sourceTree = "<group>"; };
+		4F443F442F9D902011D1C0AA777EDE1B /* UITableView+.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITableView+.swift"; path = "WZUIExtension/Classes/UITableView+.swift"; sourceTree = "<group>"; };
+		5A1A064FDF23550F35AFA8B9486AF88D /* WZUIExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WZUIExtension.release.xcconfig; sourceTree = "<group>"; };
+		66349EE1E66BA6EB6548D2D6956B0724 /* WZUIExtension.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = WZUIExtension.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		6E41D4C64CEE9F310728F7E207ACE8F4 /* UIColor+.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+.swift"; path = "WZUIExtension/Classes/UIColor+.swift"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		7C2A1542991E8932C435455A2DA05FDF /* WZUIExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WZUIExtension.release.xcconfig; sourceTree = "<group>"; };
+		7B1F54AA2D1D5E526F9F4851E77AFECA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		80A170E17CA586169EED1465F8628F93 /* Pods-WZUIExtension_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WZUIExtension_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		81A9553EB5FE0ADA7D645A7CBD3AC2B5 /* UIColor+.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+.swift"; path = "WZUIExtension/Classes/UIColor+.swift"; sourceTree = "<group>"; };
-		8647234BCBE1FDE016477535F19A7C34 /* UIDevice+.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIDevice+.swift"; path = "WZUIExtension/Classes/UIDevice+.swift"; sourceTree = "<group>"; };
+		8388735A2B55EC4126FF88D905A3AFE5 /* UIControl+.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIControl+.swift"; path = "WZUIExtension/Classes/UIControl+.swift"; sourceTree = "<group>"; };
 		890E933CA55F379FD67A6DED99A55844 /* Pods-WZUIExtension_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WZUIExtension_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		8946CF5B2678B7B0A87A509BB47A0327 /* WZUIExtension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WZUIExtension-dummy.m"; sourceTree = "<group>"; };
+		8BDE55107203E6BBA5FB9068D616A33C /* WZUIExtension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WZUIExtension.modulemap; sourceTree = "<group>"; };
+		8C2783C31BE375C428E8DE684AA082CB /* UIImage+.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+.swift"; path = "WZUIExtension/Classes/UIImage+.swift"; sourceTree = "<group>"; };
 		92C2BF91D4C3C9A6D47F342E62F7486D /* WZNamespaceWrappable-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WZNamespaceWrappable-prefix.pch"; sourceTree = "<group>"; };
-		9421D4DF056EC8F0FD28DEA2F3BFF825 /* WZUIExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WZUIExtension.debug.xcconfig; sourceTree = "<group>"; };
 		946EAB43FDEF819C152D0D889174C74F /* WZNamespaceWrappable-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WZNamespaceWrappable-dummy.m"; sourceTree = "<group>"; };
+		94F8113EE91A24B3FB1F0ECAEB92CE58 /* WZUIExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WZUIExtension.debug.xcconfig; sourceTree = "<group>"; };
 		98EBC9ABAD94232B331E6B5CF77A7AAA /* WZNamespaceWrappable-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WZNamespaceWrappable-umbrella.h"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A15483903AD4CB465BBAD7D35454DC5D /* UICollectionView+.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UICollectionView+.swift"; path = "WZUIExtension/Classes/UICollectionView+.swift"; sourceTree = "<group>"; };
 		A887EEDEFEAD4F61A302ABEF015F308A /* WZNamespaceWrappable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WZNamespaceWrappable.swift; path = WZNamespaceWrappable/Classes/WZNamespaceWrappable.swift; sourceTree = "<group>"; };
 		AB413B6E9AAAD74593BA2D40D10479BD /* Pods-WZUIExtension_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-WZUIExtension_Example"; path = Pods_WZUIExtension_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		ACCBCEAC2C0AA181609F978B2DA5F33E /* UILabel+.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILabel+.swift"; path = "WZUIExtension/Classes/UILabel+.swift"; sourceTree = "<group>"; };
+		AE6E7AE7850A2DA7F113DF4BF2A4C525 /* WZUIExtension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WZUIExtension-umbrella.h"; sourceTree = "<group>"; };
 		AF02738AB6311640B4A414E0FDB3CB0D /* WZNamespaceWrappable.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WZNamespaceWrappable.release.xcconfig; sourceTree = "<group>"; };
 		B04D66A9FE53F5D294E5E1A0A5EADE2B /* Pods-WZUIExtension_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WZUIExtension_Example-umbrella.h"; sourceTree = "<group>"; };
 		B47CE000F804A798B071A469E0B899C0 /* WZNamespaceWrappable.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WZNamespaceWrappable.modulemap; sourceTree = "<group>"; };
-		C0A68CB18EA201A04E6C116897892DE5 /* UIAlertController+.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIAlertController+.swift"; path = "WZUIExtension/Classes/UIAlertController+.swift"; sourceTree = "<group>"; };
-		C61E7D1DDD7BC38820FFD3D2D9C693A1 /* UIControl+.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIControl+.swift"; path = "WZUIExtension/Classes/UIControl+.swift"; sourceTree = "<group>"; };
+		B5344036362F79484EED52FE90FEE0F8 /* UIDevice+.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIDevice+.swift"; path = "WZUIExtension/Classes/UIDevice+.swift"; sourceTree = "<group>"; };
+		B8DCC1AB5AD075D1F6A3C4985F184918 /* WZUIExtension-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WZUIExtension-prefix.pch"; sourceTree = "<group>"; };
+		C6CB383D6D34299AC44AC5B9B4D2DAB7 /* WZCAGradientView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WZCAGradientView.swift; path = WZUIExtension/Classes/WZCAGradientView.swift; sourceTree = "<group>"; };
 		CF3B299FFEBF80C8D4F87760FD60C0F6 /* Pods-WZUIExtension_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WZUIExtension_Example.release.xcconfig"; sourceTree = "<group>"; };
 		D01ABBD75B34516FBEBD4EA35A43257B /* WZNamespaceWrappable */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WZNamespaceWrappable; path = WZNamespaceWrappable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1B92CA74545AB6418F7E58C15B87384 /* UIAlertController+.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIAlertController+.swift"; path = "WZUIExtension/Classes/UIAlertController+.swift"; sourceTree = "<group>"; };
 		D45CEE4B2D132B2AE546A13131796C3B /* WZNamespaceWrappable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WZNamespaceWrappable.debug.xcconfig; sourceTree = "<group>"; };
-		D8FC99823B21C718775E8C5A6625B199 /* WZUIExtension-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WZUIExtension-Info.plist"; sourceTree = "<group>"; };
-		E1D5AAC9264EF0BE9823A48888BA1EA6 /* UIView+.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+.swift"; path = "WZUIExtension/Classes/UIView+.swift"; sourceTree = "<group>"; };
 		E4B896D2D95C90E9CAB7F11C601A61FD /* WZNamespaceWrappable-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WZNamespaceWrappable-Info.plist"; sourceTree = "<group>"; };
-		E5A68BA29EB40AFCAE273E3DE2C1D98B /* WZUIExtension-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WZUIExtension-prefix.pch"; sourceTree = "<group>"; };
-		E813783241F8C2AA46071098F6A63F61 /* WZUIExtension.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = WZUIExtension.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		EE050DACD1A5CD103E513CBAAE7C3B8D /* UITableView+.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITableView+.swift"; path = "WZUIExtension/Classes/UITableView+.swift"; sourceTree = "<group>"; };
-		FDC83F67F693A34CA0962F5E1D2617A4 /* UIAlertAction+Image.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIAlertAction+Image.swift"; path = "WZUIExtension/Classes/UIAlertAction+Image.swift"; sourceTree = "<group>"; };
 		FEB2F8BA7872DB11D1225F3ECBFE528A /* Pods-WZUIExtension_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WZUIExtension_Example.modulemap"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0192726B963AD319FD2C6B1AB6DE746F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6DF65E547E0FBFE6875273640372D5B9 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		41BC0754D074E0B8A6A6A32F8D2AD76B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -128,30 +120,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		55C1727FF5512C265571DEB6F06FD6F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34DD7936797D1635D1E3CE917C77F8D1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3E79007DD1317E2265519495F9D26D84 /* WZUIExtension */ = {
+		0304FDC4407E909038A4E4EF2FD3440A /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				FDC83F67F693A34CA0962F5E1D2617A4 /* UIAlertAction+Image.swift */,
-				C0A68CB18EA201A04E6C116897892DE5 /* UIAlertController+.swift */,
-				0265EACE621D180A7225845FAF715454 /* UIButton+.swift */,
-				01DDB74033D4AB38EC0694EFDD0B474E /* UICollectionView+.swift */,
-				81A9553EB5FE0ADA7D645A7CBD3AC2B5 /* UIColor+.swift */,
-				C61E7D1DDD7BC38820FFD3D2D9C693A1 /* UIControl+.swift */,
-				8647234BCBE1FDE016477535F19A7C34 /* UIDevice+.swift */,
-				6A9D2798B9DB196792BFF1C079725969 /* UIImage+.swift */,
-				ACCBCEAC2C0AA181609F978B2DA5F33E /* UILabel+.swift */,
-				EE050DACD1A5CD103E513CBAAE7C3B8D /* UITableView+.swift */,
-				E1D5AAC9264EF0BE9823A48888BA1EA6 /* UIView+.swift */,
-				2882C8592941939C0000B78F /* WZCAGradientView.swift */,
-				2882C85B294193F70000B78F /* WZGradientButton.swift */,
-				D1AD0AF614FC4699F19C3355F8278A44 /* Pod */,
-				F2C9974C7AC29CF72F420DD5FA7CFA0E /* Support Files */,
+				8BDE55107203E6BBA5FB9068D616A33C /* WZUIExtension.modulemap */,
+				1E735521EA3FD8D333B61288A97ACE67 /* WZUIExtension-dummy.m */,
+				26BECBF537E5A57BD787D3F5A36483F1 /* WZUIExtension-Info.plist */,
+				B8DCC1AB5AD075D1F6A3C4985F184918 /* WZUIExtension-prefix.pch */,
+				AE6E7AE7850A2DA7F113DF4BF2A4C525 /* WZUIExtension-umbrella.h */,
+				94F8113EE91A24B3FB1F0ECAEB92CE58 /* WZUIExtension.debug.xcconfig */,
+				5A1A064FDF23550F35AFA8B9486AF88D /* WZUIExtension.release.xcconfig */,
 			);
-			name = WZUIExtension;
-			path = ../..;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/WZUIExtension";
+			sourceTree = "<group>";
+		};
+		4084D1FA1E1CDDF2348B2EEF4E78F627 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E3F3367C763107E9DE885836E6A982B8 /* WZUIExtension */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -188,6 +188,16 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		959D218ECCBBF7455BEE6252651272F1 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				1AA29AC687FD00D67C99D6E86A21966F /* LICENSE */,
+				7B1F54AA2D1D5E526F9F4851E77AFECA /* README.md */,
+				66349EE1E66BA6EB6548D2D6956B0724 /* WZUIExtension.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
 		9BDC15F87DB635C921CF1E9642996EBE /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -215,22 +225,12 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				F285B1381A4DA79D72A490F7CFC468FE /* Development Pods */,
+				4084D1FA1E1CDDF2348B2EEF4E78F627 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				F73C95B980353FE74C97930871D7E0B5 /* Pods */,
 				8DDF883EE36A0A6DEFDA3BEFDE3AA196 /* Products */,
 				A647C82DB97BD21CABEBC8DCA4CD3D0F /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		D1AD0AF614FC4699F19C3355F8278A44 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				405DD499F58084A95AAE59B6436B1795 /* LICENSE */,
-				30716A1D23DB8505BAD328C5804FD113 /* README.md */,
-				E813783241F8C2AA46071098F6A63F61 /* WZUIExtension.podspec */,
-			);
-			name = Pod;
 			sourceTree = "<group>";
 		};
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
@@ -247,30 +247,31 @@
 				A887EEDEFEAD4F61A302ABEF015F308A /* WZNamespaceWrappable.swift */,
 				9BDC15F87DB635C921CF1E9642996EBE /* Support Files */,
 			);
+			name = WZNamespaceWrappable;
 			path = WZNamespaceWrappable;
 			sourceTree = "<group>";
 		};
-		F285B1381A4DA79D72A490F7CFC468FE /* Development Pods */ = {
+		E3F3367C763107E9DE885836E6A982B8 /* WZUIExtension */ = {
 			isa = PBXGroup;
 			children = (
-				3E79007DD1317E2265519495F9D26D84 /* WZUIExtension */,
+				0506AE7830601CA04E7593191C84D975 /* UIAlertAction+Image.swift */,
+				D1B92CA74545AB6418F7E58C15B87384 /* UIAlertController+.swift */,
+				0F286548FDF8745B8E30236DCDB44CEE /* UIButton+.swift */,
+				A15483903AD4CB465BBAD7D35454DC5D /* UICollectionView+.swift */,
+				6E41D4C64CEE9F310728F7E207ACE8F4 /* UIColor+.swift */,
+				8388735A2B55EC4126FF88D905A3AFE5 /* UIControl+.swift */,
+				B5344036362F79484EED52FE90FEE0F8 /* UIDevice+.swift */,
+				8C2783C31BE375C428E8DE684AA082CB /* UIImage+.swift */,
+				37299849CB73E0DD04AD3C791B03D1F1 /* UILabel+.swift */,
+				4F443F442F9D902011D1C0AA777EDE1B /* UITableView+.swift */,
+				2BB702FC33B1A7C2C2254D7B204B3CAE /* UIView+.swift */,
+				C6CB383D6D34299AC44AC5B9B4D2DAB7 /* WZCAGradientView.swift */,
+				12D121A56E551A33B4E80E655424D6E9 /* WZGradientButton.swift */,
+				959D218ECCBBF7455BEE6252651272F1 /* Pod */,
+				0304FDC4407E909038A4E4EF2FD3440A /* Support Files */,
 			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		F2C9974C7AC29CF72F420DD5FA7CFA0E /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				1AA9645BB8B0DA208C4F859B0EA2FDD6 /* WZUIExtension.modulemap */,
-				8946CF5B2678B7B0A87A509BB47A0327 /* WZUIExtension-dummy.m */,
-				D8FC99823B21C718775E8C5A6625B199 /* WZUIExtension-Info.plist */,
-				E5A68BA29EB40AFCAE273E3DE2C1D98B /* WZUIExtension-prefix.pch */,
-				56BECD01BC6F35158AC47B1810794B71 /* WZUIExtension-umbrella.h */,
-				9421D4DF056EC8F0FD28DEA2F3BFF825 /* WZUIExtension.debug.xcconfig */,
-				7C2A1542991E8932C435455A2DA05FDF /* WZUIExtension.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/WZUIExtension";
+			name = WZUIExtension;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		F73C95B980353FE74C97930871D7E0B5 /* Pods */ = {
@@ -284,11 +285,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		6FB6B27AD1C809748C619DCD95993B10 /* Headers */ = {
+		3F71A687C1C4424D76ABF01C60D0DBE3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				765813C6CCDF560A4006ACD40847E035 /* WZUIExtension-umbrella.h in Headers */,
+				488D681F02BC19A2D15C45310F87634A /* WZUIExtension-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,8 +342,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				C44B53EA70A911F45DDAAC5830183200 /* PBXTargetDependency */,
-				FED41B7858D0836EAC75FA735C7DF3F1 /* PBXTargetDependency */,
+				C9AB04244C2B18AF9E3DB5C6BA0D7352 /* PBXTargetDependency */,
+				98F668D35104F3A53F72020722D5D927 /* PBXTargetDependency */,
 			);
 			name = "Pods-WZUIExtension_Example";
 			productName = Pods_WZUIExtension_Example;
@@ -351,17 +352,17 @@
 		};
 		B173CD5B88A3C21F116EA83AF4D8F8B4 /* WZUIExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 34C7A9F5162B4BC747E65E36D01B283E /* Build configuration list for PBXNativeTarget "WZUIExtension" */;
+			buildConfigurationList = 629D753D120F4DE190298C799178FE21 /* Build configuration list for PBXNativeTarget "WZUIExtension" */;
 			buildPhases = (
-				6FB6B27AD1C809748C619DCD95993B10 /* Headers */,
-				D35DB4F787686D00EE893584B3C7AE5D /* Sources */,
-				0192726B963AD319FD2C6B1AB6DE746F /* Frameworks */,
-				4B9464B943C17F298F59C7857237C2B2 /* Resources */,
+				3F71A687C1C4424D76ABF01C60D0DBE3 /* Headers */,
+				C4CBE0CF01F9117C90CFD6F312CCCE62 /* Sources */,
+				55C1727FF5512C265571DEB6F06FD6F5 /* Frameworks */,
+				73D25EE167F945D5C79AEFD0A50266B0 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				95EBD655A5CB68FAF9A90BD55B8A570A /* PBXTargetDependency */,
+				A68ACB0C6694429091189D6EC3BC048C /* PBXTargetDependency */,
 			);
 			name = WZUIExtension;
 			productName = WZUIExtension;
@@ -405,14 +406,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4B9464B943C17F298F59C7857237C2B2 /* Resources */ = {
+		55BDEEEC7072ECFFCCDD9B4B2394A735 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		55BDEEEC7072ECFFCCDD9B4B2394A735 /* Resources */ = {
+		73D25EE167F945D5C79AEFD0A50266B0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -439,47 +440,47 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D35DB4F787686D00EE893584B3C7AE5D /* Sources */ = {
+		C4CBE0CF01F9117C90CFD6F312CCCE62 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5DFEE4B8F8BD18B14E84ADFBBB68F1BB /* UIAlertAction+Image.swift in Sources */,
-				8015DC343E5006510E68E22F22AA1364 /* UIAlertController+.swift in Sources */,
-				2882C85C294193F70000B78F /* WZGradientButton.swift in Sources */,
-				830CFFF72DAA36C5D892ED7F0D15E97A /* UIButton+.swift in Sources */,
-				23F600B34604E0E60438B1FE8E5E0D5F /* UICollectionView+.swift in Sources */,
-				86DECA010E8F08342ADFA48DDC7DEC1F /* UIColor+.swift in Sources */,
-				2882C85A2941939C0000B78F /* WZCAGradientView.swift in Sources */,
-				5C8A738F3E31C680183407A5A392CD8B /* UIControl+.swift in Sources */,
-				9241825EF936FBB805021F565AE2ED1C /* UIDevice+.swift in Sources */,
-				B82237FAECA80D2CEF3F908FD6A5AC76 /* UIImage+.swift in Sources */,
-				97CFFCEB7AD88524684CE35DB52766CC /* UILabel+.swift in Sources */,
-				787334B657F43441D4660B01AB31D68D /* UITableView+.swift in Sources */,
-				3213130791AB5485B1EEC6DF105A9504 /* UIView+.swift in Sources */,
-				3D1AF352152472FB07D6756270ED307F /* WZUIExtension-dummy.m in Sources */,
+				4F21D4D58F3B82EB409E2052DCE1C958 /* UIAlertAction+Image.swift in Sources */,
+				85075DB66CF39B981ED1C8EE3C7F5DC3 /* UIAlertController+.swift in Sources */,
+				143E49FF0817E1B3765F57C54F8FA20D /* UIButton+.swift in Sources */,
+				B784DE86C6E8971A259EE074D2D39128 /* UICollectionView+.swift in Sources */,
+				C549F3DEEBFAD3C483A6B0592125EEA8 /* UIColor+.swift in Sources */,
+				A800A7F234DEA411C6C420132FB4327A /* UIControl+.swift in Sources */,
+				2CB3AF999C77AFD59C20600AE9B827E0 /* UIDevice+.swift in Sources */,
+				893A7564444A17F63881CC276964F83C /* UIImage+.swift in Sources */,
+				28EA82F579B90A810B263CC2A1D67817 /* UILabel+.swift in Sources */,
+				F01638BC0996B4408D88B81CCF8A28D0 /* UITableView+.swift in Sources */,
+				18B498D660FCC3E941141F9451B5EABB /* UIView+.swift in Sources */,
+				5CD1C872D9947BCABFCFA09E51AF56A6 /* WZCAGradientView.swift in Sources */,
+				114BE40A8E374A43BEF7DBFF96DBBC10 /* WZGradientButton.swift in Sources */,
+				3B56837922B8ADD4A708D816A04052B0 /* WZUIExtension-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		95EBD655A5CB68FAF9A90BD55B8A570A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = WZNamespaceWrappable;
-			target = 1A655A57748C7717D20FB5E031C49A29 /* WZNamespaceWrappable */;
-			targetProxy = 6CD2889D3C7A7608390D957E528B0793 /* PBXContainerItemProxy */;
-		};
-		C44B53EA70A911F45DDAAC5830183200 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = WZNamespaceWrappable;
-			target = 1A655A57748C7717D20FB5E031C49A29 /* WZNamespaceWrappable */;
-			targetProxy = ECA805970FE3791AD1B8DFB475AADCCD /* PBXContainerItemProxy */;
-		};
-		FED41B7858D0836EAC75FA735C7DF3F1 /* PBXTargetDependency */ = {
+		98F668D35104F3A53F72020722D5D927 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = WZUIExtension;
 			target = B173CD5B88A3C21F116EA83AF4D8F8B4 /* WZUIExtension */;
-			targetProxy = F3BAFD78F0E612C16E2654940B578F79 /* PBXContainerItemProxy */;
+			targetProxy = CE5995924C35034AD5A2EF8F380B9D19 /* PBXContainerItemProxy */;
+		};
+		A68ACB0C6694429091189D6EC3BC048C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WZNamespaceWrappable;
+			target = 1A655A57748C7717D20FB5E031C49A29 /* WZNamespaceWrappable */;
+			targetProxy = 5AC047C0E0BA38036F2C0BCFE70E8501 /* PBXContainerItemProxy */;
+		};
+		C9AB04244C2B18AF9E3DB5C6BA0D7352 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WZNamespaceWrappable;
+			target = 1A655A57748C7717D20FB5E031C49A29 /* WZNamespaceWrappable */;
+			targetProxy = B1A802D02A040CE01D5502553EC8BB62 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -516,40 +517,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		6A6868787430EC31067EAECA47899927 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7C2A1542991E8932C435455A2DA05FDF /* WZUIExtension.release.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/WZUIExtension/WZUIExtension-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/WZUIExtension/WZUIExtension-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/WZUIExtension/WZUIExtension.modulemap";
-				PRODUCT_MODULE_NAME = WZUIExtension;
-				PRODUCT_NAME = WZUIExtension;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		70F0E6B1E64802C18F70C324E34BDF78 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -675,11 +642,45 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
+		};
+		9FB3727957FEC5DB274480CA0205FBD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94F8113EE91A24B3FB1F0ECAEB92CE58 /* WZUIExtension.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/WZUIExtension/WZUIExtension-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WZUIExtension/WZUIExtension-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/WZUIExtension/WZUIExtension.modulemap";
+				PRODUCT_MODULE_NAME = WZUIExtension;
+				PRODUCT_NAME = WZUIExtension;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -747,39 +748,6 @@
 			};
 			name = Debug;
 		};
-		CAD80BB32747FB45A3B6D5B13053C65B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9421D4DF056EC8F0FD28DEA2F3BFF825 /* WZUIExtension.debug.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/WZUIExtension/WZUIExtension-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/WZUIExtension/WZUIExtension-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/WZUIExtension/WZUIExtension.modulemap";
-				PRODUCT_MODULE_NAME = WZUIExtension;
-				PRODUCT_NAME = WZUIExtension;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		F27DAEF29B88C90335EED912FA0D2464 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 890E933CA55F379FD67A6DED99A55844 /* Pods-WZUIExtension_Example.debug.xcconfig */;
@@ -814,18 +782,43 @@
 			};
 			name = Debug;
 		};
+		FDD336EA4AA248CE6E8A97D8E7239807 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A1A064FDF23550F35AFA8B9486AF88D /* WZUIExtension.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/WZUIExtension/WZUIExtension-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WZUIExtension/WZUIExtension-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/WZUIExtension/WZUIExtension.modulemap";
+				PRODUCT_MODULE_NAME = WZUIExtension;
+				PRODUCT_NAME = WZUIExtension;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		34C7A9F5162B4BC747E65E36D01B283E /* Build configuration list for PBXNativeTarget "WZUIExtension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CAD80BB32747FB45A3B6D5B13053C65B /* Debug */,
-				6A6868787430EC31067EAECA47899927 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		42A3F969000BE7DADE8B771DF215ADD8 /* Build configuration list for PBXNativeTarget "Pods-WZUIExtension_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -840,6 +833,15 @@
 			buildConfigurations = (
 				B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */,
 				903A0004D3E6651EFD5D2E16214D101B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		629D753D120F4DE190298C799178FE21 /* Build configuration list for PBXNativeTarget "WZUIExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FB3727957FEC5DB274480CA0205FBD0 /* Debug */,
+				FDD336EA4AA248CE6E8A97D8E7239807 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
