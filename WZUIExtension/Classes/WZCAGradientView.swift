@@ -28,7 +28,7 @@ open class WZCAGradientView: UIView {
         return $0
     }(CAGradientLayer())
     
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
         self.layer.insertSublayer(gradientLayer, at: 0)
     }
