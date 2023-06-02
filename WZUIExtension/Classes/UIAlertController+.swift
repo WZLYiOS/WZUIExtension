@@ -25,7 +25,7 @@ public extension WZNamespaceWrappable where Base: UIAlertController {
     /// - Parameter actions: 其他事件
     /// - Parameter tintColor: tintColor
     /// - Parameter handler: handler description
-    static func show<Action: CustomStringConvertible>(in vc: UIViewController,
+    static func show<Action: CustomStringConvertible>(in vc: UIViewController? = nil,
                                                       title: String? = nil,
                                                       message: String? = nil,
                                                       attributedMessage: NSAttributedString? = nil,
@@ -35,8 +35,10 @@ public extension WZNamespaceWrappable where Base: UIAlertController {
                                                       actions: [Action]? = nil,
                                                       tintColor: UIColor? = nil,
                                                       handler: ((_ action: Action, _ index: Int) -> Void)? = nil) {
+        
+        guard let controller = vc == nil ? UIViewController.topMostController:vc else { return }
         let alertView = UIAlertController(title: title, message: message, preferredStyle: preferredStyle)
-        alertView.wz.show(in: vc,
+        alertView.wz.show(in: controller,
                           attributedMessage: attributedMessage,
                           textAlignment: textAlignment,
                           preferredStyle: preferredStyle,
@@ -103,5 +105,55 @@ public extension WZNamespaceWrappable where Base: UIAlertController {
         DispatchQueue.main.async {
             vc.present(self.base, animated: true, completion: nil)
         }
+    }
+}
+
+// MARK: - Methods
+@objc public extension UIViewController {
+    
+    /// 返回当前应用程序的最顶层视图控制器。
+    @objc class var topMostController: UIViewController? {
+        guard let currentWindows = UIApplication.shared.windows.first(where: {$0.isKeyWindow}),
+                let rootViewController = currentWindows.rootViewController else { return nil }
+        return self.wzTopMost(of: rootViewController)
+    }
+    
+    
+    /// 返回给定视图控制器堆栈中最顶层的视图控制器
+    ///
+    /// - Parameter viewController: viewController description
+    /// - Returns: return value description
+    @objc private class func wzTopMost(of viewController: UIViewController?) -> UIViewController? {
+        
+        // presented view controller
+        if let presentedViewController = viewController?.presentedViewController {
+            return self.wzTopMost(of: presentedViewController)
+        }
+        
+        // UITabBarController
+        if let tabBarController = viewController as? UITabBarController,
+            let selectedViewController = tabBarController.selectedViewController {
+            return self.wzTopMost(of: selectedViewController)
+        }
+        
+        // UINavigationController
+        if let navigationController = viewController as? UINavigationController,
+            let visibleViewController = navigationController.visibleViewController {
+            return self.wzTopMost(of: visibleViewController)
+        }
+        
+        // UIPageController
+        if let pageViewController = viewController as? UIPageViewController,
+            pageViewController.viewControllers?.count == 1 {
+            return self.wzTopMost(of: pageViewController.viewControllers?.first)
+        }
+        
+        // child view controller
+        for subview in viewController?.view?.subviews ?? [] {
+            if let childViewController = subview.next as? UIViewController {
+                return self.wzTopMost(of: childViewController)
+            }
+        }
+        return viewController
     }
 }
