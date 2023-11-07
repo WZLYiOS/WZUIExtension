@@ -11,6 +11,7 @@
 		143E49FF0817E1B3765F57C54F8FA20D /* UIButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F286548FDF8745B8E30236DCDB44CEE /* UIButton+.swift */; };
 		155D768F7CFF4C7EC1A77E57552F2932 /* WZNamespaceWrappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A887EEDEFEAD4F61A302ABEF015F308A /* WZNamespaceWrappable.swift */; };
 		18B498D660FCC3E941141F9451B5EABB /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB702FC33B1A7C2C2254D7B204B3CAE /* UIView+.swift */; };
+		289B819F2AFA080F00A643DB /* UIScreen+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289B819E2AFA080F00A643DB /* UIScreen+.swift */; };
 		28EA82F579B90A810B263CC2A1D67817 /* UILabel+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37299849CB73E0DD04AD3C791B03D1F1 /* UILabel+.swift */; };
 		2CB3AF999C77AFD59C20600AE9B827E0 /* UIDevice+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5344036362F79484EED52FE90FEE0F8 /* UIDevice+.swift */; };
 		34DD7936797D1635D1E3CE917C77F8D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
@@ -61,20 +62,21 @@
 		0F286548FDF8745B8E30236DCDB44CEE /* UIButton+.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton+.swift"; path = "WZUIExtension/Classes/UIButton+.swift"; sourceTree = "<group>"; };
 		11FE8D5528D258F5DF438FD1CCED8F7A /* WZUIExtension */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WZUIExtension; path = WZUIExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		12D121A56E551A33B4E80E655424D6E9 /* WZGradientButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WZGradientButton.swift; path = WZUIExtension/Classes/WZGradientButton.swift; sourceTree = "<group>"; };
-		1AA29AC687FD00D67C99D6E86A21966F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		1AA29AC687FD00D67C99D6E86A21966F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		1B5F344F7E27734886F2A883BE10F86E /* Pods-WZUIExtension_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WZUIExtension_Example-dummy.m"; sourceTree = "<group>"; };
 		1B9D8B50DD1533B5B6CF0ED9F676E532 /* Pods-WZUIExtension_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WZUIExtension_Example-Info.plist"; sourceTree = "<group>"; };
 		1E735521EA3FD8D333B61288A97ACE67 /* WZUIExtension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WZUIExtension-dummy.m"; sourceTree = "<group>"; };
 		26BECBF537E5A57BD787D3F5A36483F1 /* WZUIExtension-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WZUIExtension-Info.plist"; sourceTree = "<group>"; };
+		289B819E2AFA080F00A643DB /* UIScreen+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIScreen+.swift"; path = "WZUIExtension/Classes/UIScreen+.swift"; sourceTree = "<group>"; };
 		2BB702FC33B1A7C2C2254D7B204B3CAE /* UIView+.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+.swift"; path = "WZUIExtension/Classes/UIView+.swift"; sourceTree = "<group>"; };
 		37299849CB73E0DD04AD3C791B03D1F1 /* UILabel+.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILabel+.swift"; path = "WZUIExtension/Classes/UILabel+.swift"; sourceTree = "<group>"; };
 		42EC01BE1A0F44B8EFF1A7EAAA288A4D /* Pods-WZUIExtension_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WZUIExtension_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		4F443F442F9D902011D1C0AA777EDE1B /* UITableView+.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITableView+.swift"; path = "WZUIExtension/Classes/UITableView+.swift"; sourceTree = "<group>"; };
 		5A1A064FDF23550F35AFA8B9486AF88D /* WZUIExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WZUIExtension.release.xcconfig; sourceTree = "<group>"; };
-		66349EE1E66BA6EB6548D2D6956B0724 /* WZUIExtension.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = WZUIExtension.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		66349EE1E66BA6EB6548D2D6956B0724 /* WZUIExtension.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = WZUIExtension.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6E41D4C64CEE9F310728F7E207ACE8F4 /* UIColor+.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+.swift"; path = "WZUIExtension/Classes/UIColor+.swift"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		7B1F54AA2D1D5E526F9F4851E77AFECA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		7B1F54AA2D1D5E526F9F4851E77AFECA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		80A170E17CA586169EED1465F8628F93 /* Pods-WZUIExtension_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WZUIExtension_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		8388735A2B55EC4126FF88D905A3AFE5 /* UIControl+.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIControl+.swift"; path = "WZUIExtension/Classes/UIControl+.swift"; sourceTree = "<group>"; };
 		890E933CA55F379FD67A6DED99A55844 /* Pods-WZUIExtension_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WZUIExtension_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -84,7 +86,7 @@
 		946EAB43FDEF819C152D0D889174C74F /* WZNamespaceWrappable-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WZNamespaceWrappable-dummy.m"; sourceTree = "<group>"; };
 		94F8113EE91A24B3FB1F0ECAEB92CE58 /* WZUIExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WZUIExtension.debug.xcconfig; sourceTree = "<group>"; };
 		98EBC9ABAD94232B331E6B5CF77A7AAA /* WZNamespaceWrappable-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WZNamespaceWrappable-umbrella.h"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A15483903AD4CB465BBAD7D35454DC5D /* UICollectionView+.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UICollectionView+.swift"; path = "WZUIExtension/Classes/UICollectionView+.swift"; sourceTree = "<group>"; };
 		A887EEDEFEAD4F61A302ABEF015F308A /* WZNamespaceWrappable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WZNamespaceWrappable.swift; path = WZNamespaceWrappable/Classes/WZNamespaceWrappable.swift; sourceTree = "<group>"; };
 		AB413B6E9AAAD74593BA2D40D10479BD /* Pods-WZUIExtension_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-WZUIExtension_Example"; path = Pods_WZUIExtension_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -247,7 +249,6 @@
 				A887EEDEFEAD4F61A302ABEF015F308A /* WZNamespaceWrappable.swift */,
 				9BDC15F87DB635C921CF1E9642996EBE /* Support Files */,
 			);
-			name = WZNamespaceWrappable;
 			path = WZNamespaceWrappable;
 			sourceTree = "<group>";
 		};
@@ -255,6 +256,7 @@
 			isa = PBXGroup;
 			children = (
 				0506AE7830601CA04E7593191C84D975 /* UIAlertAction+Image.swift */,
+				289B819E2AFA080F00A643DB /* UIScreen+.swift */,
 				D1B92CA74545AB6418F7E58C15B87384 /* UIAlertController+.swift */,
 				0F286548FDF8745B8E30236DCDB44CEE /* UIButton+.swift */,
 				A15483903AD4CB465BBAD7D35454DC5D /* UICollectionView+.swift */,
@@ -445,6 +447,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F21D4D58F3B82EB409E2052DCE1C958 /* UIAlertAction+Image.swift in Sources */,
+				289B819F2AFA080F00A643DB /* UIScreen+.swift in Sources */,
 				85075DB66CF39B981ED1C8EE3C7F5DC3 /* UIAlertController+.swift in Sources */,
 				143E49FF0817E1B3765F57C54F8FA20D /* UIButton+.swift in Sources */,
 				B784DE86C6E8971A259EE074D2D39128 /* UICollectionView+.swift in Sources */,
@@ -642,8 +645,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
